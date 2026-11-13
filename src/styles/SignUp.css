@@ -1,0 +1,158 @@
+.signup {
+  display: flex;
+  min-height: 75vh;
+  background: #F4F7F2;
+  font-family: Arial, sans-serif;
+}
+
+.signupLeft {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: #34483A;
+  color: #FFFFFF;
+}
+
+.signupWelcome {
+  max-width: 400px;
+}
+
+.signupWelcome h1 {
+  font-size: 38px;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+.signupWelcome p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #E3EAE2;
+}
+
+.signupRight {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.signupRight form {
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  background: #FFFFFF;
+  border: 1px solid #E3EAE2;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(52, 72, 58, 0.08);
+}
+
+.signupRight h2 {
+  margin: 0 0 10px;
+  color: #34483A;
+  font-size: 30px;
+}
+
+.signupDescription {
+  margin-bottom: 25px;
+  color: #66736A;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.signupRight label {
+  display: block;
+  margin: 16px 0 8px;
+  color: #34483A;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.signupRight input {
+  width: 100%;
+  padding: 13px;
+  box-sizing: border-box;
+  border: 1px solid #D5DED4;
+  border-radius: 7px;
+  background: #FFFFFF;
+  color: #34483A;
+  font-size: 15px;
+  outline: none;
+}
+
+.signupRight input:focus {
+  border-color: #72917A;
+  box-shadow: 0 0 0 3px rgba(114, 145, 122, 0.15);
+}
+
+.signupRight button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  border: 2px solid #72917A;
+  border-radius: 7px;
+  background: #34483A;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.signupRight button:hover {
+  background: #72917A;
+}
+
+.signupLogin {
+  margin: 22px 0 0;
+  color: #66736A;
+  font-size: 14px;
+  text-align: center;
+}
+
+.signupLogin a {
+  color: #50785A;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signupLogin a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 750px) {
+  .signup {
+    flex-direction: column;
+  }
+
+  .signupLeft {
+    flex: none;
+    min-height: 170px;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .signupWelcome h1 {
+    font-size: 28px;
+  }
+
+  .signupWelcome p {
+    font-size: 15px;
+  }
+
+  .signupRight {
+    padding: 25px 15px;
+  }
+
+  .signupRight form {
+    padding: 25px 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .signupRight button {
+    transition: none;
+  }
+}
